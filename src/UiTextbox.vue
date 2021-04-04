@@ -236,7 +236,7 @@ export default {
         },
 
         valueLength() {
-            return this.value ? this.value.length : 0;
+            return this.value === null ? 0 : String(this.value).length;
         },
 
         hasFeedback() {
